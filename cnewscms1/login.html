@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>用户登录</title>
+<link type="text/css" href="../css/admincss.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script language="javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="login">
+	<form action="" method="post" onSubmit="">
+	<div class="login_input"><span>用户名：<input id="adminname" name="adminname" type="text" size="9" /><label id="one"></label>
+	密码：<input id="adminpwd" name="adminpwd" type="password" size="9" />
+	验证码：<input id="admincode" name="admincode" type="text" size="9">
+    <img id="code" src="function/create_code.php" alt="看不清楚，换一张" style="cursor: pointer; vertical-align:middle;" onClick="create_code()"/></span>
+	<div class="login_post"><input class="post" type="submit" value="提 交" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="清 除" /></div>
+	</form>
+</div>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('#adminname').focus();
+	$('.post').click(function()
+	{
+		if(('#adminname').val() == '')
+		{
+			$('#one').html('用户名为空');
+			return;
+		}
+	});
+});
+</script>
+</body>

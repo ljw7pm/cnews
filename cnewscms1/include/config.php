@@ -1,0 +1,9 @@
+<?php
+/*Êý¾Ý¿âÉèÖÃ*/
+$ServerName="localhost";
+$UserName="root";
+$Password="root";
+$DBName="cnewscms";
+$charset="gbk";
+$user_code="807060";
+?>

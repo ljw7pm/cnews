@@ -1,0 +1,23 @@
+<?php
+//报错处理
+//-------------------------------------------------------------------------
+error_reporting(E_ERROR | E_PARSE);
+unset($_ENV,$HTTP_ENV_VARS,$_REQUEST,$HTTP_POST_VARS,$HTTP_GET_VARS);
+//-------------------------------------------------------------------------
+//定义常量
+//-------------------------------------------------------------------------
+define("ROOT_PATH",dirname(__FILE__).DIRECTORY_SEPARATOR);
+define("INCLUDE_PATH",ROOT_PATH.'include'.DIRECTORY_SEPARATOR);
+define("JS_PATH",ROOT_PATH.'js'.DIRECTORY_SEPARATOR);
+define("CSS_PATH",ROOT_PATH.'css'.DIRECTORY_SEPARATOR);
+define("FUNCTION_PATH",ROOT_PATH.'function'.DIRECTORY_SEPARATOR);
+define("ADMIN_PATH",ROOT_PATH.'admin'.DIRECTORY_SEPARATOR);
+define("UPLOAD_DIR",ROOT_PATH.'uploadfiles'.DIRECTORY_SEPARATOR);
+define("MAX_SIZE",'1024000');
+//公共部分
+//-------------------------------------------------------------------------
+require_once(INCLUDE_PATH.'set.config.php');
+require_once(INCLUDE_PATH.'mysql.php');
+require_once(INCLUDE_PATH.'common.php');
+//-------------------------------------------------------------------------
+?>

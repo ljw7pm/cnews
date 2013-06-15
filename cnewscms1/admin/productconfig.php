@@ -1,0 +1,11 @@
+<?php 
+$valid_suffix=array('.png','.jpg','.gif');
+$message=array(
+		'error1'=>'文件大小超过限制',
+		'error2'=>'文件大小超过限制',
+		'error3'=>'只有部分文件被上传',
+		'error4'=>'你没有上传文件',
+		'error_valid'=>'不支持你文件后缀名',
+		'error_uploaded'=>'上传失败'
+);
+?>

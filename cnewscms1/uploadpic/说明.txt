@@ -1,0 +1,20 @@
+                              360免费图片上传系统
+
+--安装:
+
+将压缩包解压至你的站点目录下.
+
+编辑配置文件 config.php.
+define('SITE_NAME','360免费图片上传系统');
+define('SITE_ADV','支持png gif jpg swf rar等文件上传');
+define('SITE_DIR','http://upload.360mf.cn/'); // with '/' at the end.
+define('UPLOAD_DIR','up/'); // with '/' at the end. ! Make it can be read and write!
+define('MAX_SIZE','1024000'); // bytes
+
+--注意:
+需要PHP 4.3.0 或以上版本支持
+
+
+--版权:
+Copyright(C)2007
+ImageUpon
